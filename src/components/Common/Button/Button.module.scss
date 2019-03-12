@@ -1,0 +1,30 @@
+@import '../../../brand-styles';
+@import '../../../fonts';
+
+.Button {
+  padding: 10px 15px;
+  border: 2px solid $natera-grey;
+  color: $natera-grey;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family: $gotham-cyrillic-medium;
+  font-size: 13px;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  box-sizing: border-box;
+  transition-property: background-color, color, fill, border-color;
+  transition-duration: .25s;
+  transition-timing-function: linear;
+  cursor: pointer;
+  user-select: none;
+  fill: $natera-grey;
+
+  @media (hover) {
+    &:hover {
+      color: $natera-blue;
+      border: 2px solid $natera-blue;
+      fill: $natera-blue;
+    }
+  }
+}
+

@@ -1,25 +1,42 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import './App.scss';
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import EditorialChoice from "./components/ShowBiz/EditorialChoice/EditorialChoice";
+import LastConcert from "./components/ShowBiz/LastConcert/LastConcert";
+import Interview from "./components/ShowBiz/Interview/Interview";
+import MasterClass from "./components/Art/MasterClass/MasterClass";
+import Pokras from "./components/Art/Pokras/Pokras";
+import Exhibition from "./components/Art/Exhibition/Exhibition";
+import SummerColor from "./components/Fashion/SummerColor/SummerColor";
+import ImageGrid from "./components/Fashion/ImageGrid/ImageGrid";
+import MainNews from "./components/Society/MainNews/MainNews";
+import NewsGrid from "./components/Society/NewsGrid/NewsGrid";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Header/>
+        <div>
+          <EditorialChoice/>
+          <LastConcert/>
+          <Interview/>
+        </div>
+        <div>
+          <MasterClass/>
+          <Pokras/>
+          <Exhibition/>
+        </div>
+        <div>
+          <SummerColor/>
+          <ImageGrid/>
+        </div>
+        <div>
+          <MainNews/>
+          <NewsGrid/>
+        </div>
+        <Footer/>
       </div>
     );
   }

@@ -1,0 +1,11 @@
+.Header {
+  height: 100px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+
+  .NavBar {
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,74 @@
+$gotham-cyrillic-black: "GothaProBla";
+$gotham-cyrillic-black-italic: "GothaProBlaIta";
+$gotham-cyrillic-bold: "GothaProBol";
+$gotham-cyrillic-bold-italic: "GothaProBolIta";
+$gotham-cyrillic-regular-italic: "GothaProIta";
+$gotham-cyrillic-light: "GothaProLig";
+$gotham-cyrillic-light-italic: "GothaProLigIta";
+$gotham-cyrillic-medium: "GothaProMed";
+$gotham-cyrillic-medium-italic: "GothaProMedIta";
+$gotham-cyrillic-narrow-medium: "GothaProNarBol";
+$gotham-cyrillic-narrow-bold: "GothaProNarMed";
+$gotham-cyrillic-regular: "GothaProReg";
+
+@font-face {
+  font-family: $gotham-cyrillic-black;
+  src: url("/assets/fonts/GothaProBla.otf") format("opentype");
+}
+
+@font-face {
+  font-family: $gotham-cyrillic-black-italic;
+  src: url("/assets/fonts/GothaProBlaIta.otf") format("opentype");
+}
+
+@font-face {
+  font-family: $gotham-cyrillic-bold;
+  src: url("/assets/fonts/GothaProBol.otf") format("opentype");
+}
+
+@font-face {
+  font-family: $gotham-cyrillic-bold-italic;
+  src: url("/assets/fonts/GothaProBolIta.otf") format("opentype");
+}
+
+@font-face {
+  font-family: $gotham-cyrillic-regular-italic;
+  src: url("/assets/fonts/GothaProIta.otf") format("opentype");
+}
+
+@font-face {
+  font-family: $gotham-cyrillic-light;
+  src: url("/assets/fonts/GothaProLig.otf") format("opentype");
+}
+
+@font-face {
+  font-family: $gotham-cyrillic-light-italic;
+  src: url("/assets/fonts/GothaProLigIta.otf") format("opentype");
+}
+
+@font-face {
+  font-family: $gotham-cyrillic-medium;
+  src: url("/assets/fonts/GothaProMed.otf") format("opentype");
+}
+
+@font-face {
+  font-family: $gotham-cyrillic-medium-italic;
+  src: url("/assets/fonts/GothaProMedIta.otf") format("opentype");
+}
+
+@font-face {
+  font-family: $gotham-cyrillic-narrow-medium;
+  src: url("/assets/fonts/GothaProNarMed.otf") format("opentype");
+}
+
+@font-face {
+  font-family: $gotham-cyrillic-narrow-bold;
+  src: url("/assets/fonts/GothaProNarBol.otf") format("opentype");
+}
+
+@font-face {
+  font-family: $gotham-cyrillic-regular;
+  src: url("/assets/fonts/GothaProReg.otf") format("opentype");
+}
+
+
