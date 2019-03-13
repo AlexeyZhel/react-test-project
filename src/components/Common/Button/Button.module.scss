@@ -2,7 +2,7 @@
 @import '../../../fonts';
 
 .Button {
-  padding: 10px 15px;
+  padding: 10px 10px;
   border: 2px solid $natera-grey;
   color: $natera-grey;
   background-color: transparent;
@@ -26,5 +26,10 @@
       fill: $natera-blue;
     }
   }
+}
+
+.Arrow {
+  width: 40px;
+  height: 40px;
 }
 
