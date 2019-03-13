@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import classes from './FloatingImage.module.scss'
 import {IFloatingImageProps, IFloatingImageState} from "./FloatingImage.interface";
-import * as _ from 'lodash'
 
 class FloatingImage extends Component<IFloatingImageProps, IFloatingImageState> {
   constructor(props: IFloatingImageProps) {
