@@ -1,0 +1,14 @@
+.FloatingImageContainer {
+  overflow: hidden;
+}
+
+.FloatingImage {
+  cursor: pointer;
+  transition: transform .2s; /* Animation */
+
+  @media (hover) {
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}

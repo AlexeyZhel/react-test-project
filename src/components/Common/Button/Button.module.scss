@@ -8,9 +8,10 @@
   background-color: transparent;
   text-transform: uppercase;
   font-family: $gotham-cyrillic-medium;
-  font-size: 13px;
   letter-spacing: 1.2px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
   box-sizing: border-box;
   transition-property: background-color, color, fill, border-color;
   transition-duration: .25s;
@@ -22,7 +23,7 @@
   @media (hover) {
     &:hover {
       color: $natera-blue;
-      border: 2px solid $natera-blue;
+      border: 2px solid $natera-hover-border-color;
       fill: $natera-blue;
     }
   }
@@ -31,5 +32,9 @@
 .Arrow {
   width: 40px;
   height: 40px;
+}
+
+.Text {
+  padding: 10px 67px;
 }
 
