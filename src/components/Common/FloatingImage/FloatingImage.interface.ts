@@ -1,4 +1,5 @@
 export interface  IFloatingImageProps {
+  className?: string
   src: any
   width: number
   height: number
