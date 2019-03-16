@@ -2,7 +2,7 @@
 @import '../../brand-styles';
 
 .Footer {
-  height: 494px;
+  height: 380px;
   background-color: $natera-line-color;
   padding: 50px 100px;
 
@@ -55,7 +55,6 @@
 
       .SubscribeBtn {
         width: 235px;
-        height: 41px;
         margin-top: 20px;
         background-color: $natera-white;
       }
@@ -68,6 +67,65 @@
         line-height: 20px;
         margin-top: 20px;
       }
+    }
+  }
+
+  .ConfidentAndSocial {
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 790px;
+
+    .Confident {
+      .ConfidentPolitics {
+        text-transform: uppercase;
+        font-family: $gotham-cyrillic-regular;
+        line-height: 24px;
+        font-weight: 700;
+        font-size: 12px;
+        color: $natera-white;
+        margin-bottom: 14px;
+      }
+
+      .ConfidentUnderText {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        color: $natera-confidential-color;
+        font-family: $pt-sans;
+      }
+    }
+
+    .Social {
+      display: flex;
+      justify-content: flex-end;
+
+      .SocialIcon {
+        fill: $natera-white;
+        opacity: 0.75;
+
+        @media (hover) {
+          &:hover {
+            fill: $natera-blue;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .InstagramIcon {
+        margin-top: 4px;
+        margin-left: 13px;
+      }
+
+      .FacebookIcon {
+        margin-left: 10px;
+        margin-right: 13px;
+      }
+
+      .ContactIcon {
+        margin-top: 3px;
+      }
+
     }
   }
 }

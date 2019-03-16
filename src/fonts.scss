@@ -12,6 +12,13 @@ $gotham-cyrillic-narrow-bold: "GothaProNarMed";
 $gotham-cyrillic-regular: "GothaProReg";
 $avenir-black: "AvenirBlack";
 $avenir-book: "AvenirBook";
+$pt-sans: "PTSans";
+
+
+@font-face {
+  font-family: $pt-sans;
+  src: url("/assets/fonts/PTSans.ttf") format("truetype");
+}
 
 @font-face {
   font-family: $avenir-black;

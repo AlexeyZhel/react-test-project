@@ -3,6 +3,11 @@ import classes from './Footer.module.scss'
 import {ILinkGroup, ILinkItem} from "./Footer.interface";
 import {Button, ButtonType} from "../Common/Button";
 
+import TwitterIcon from '-!svg-react-loader?name=TwitterIcon!../../assets/icons/twitter-logo.svg';
+import FacebookIcon from '-!svg-react-loader?name=TwitterIcon!../../assets/icons/facebook-logo.svg';
+import ContactIcon from '-!svg-react-loader?name=TwitterIcon!../../assets/icons/contact-logo.svg';
+import InstagramIcon from '-!svg-react-loader?name=InstagramIcon!../../assets/icons/instagram-logo.svg';
+
 class Footer extends Component<{}, {}> {
     constructor(props: {}) {
         super(props);
@@ -27,7 +32,7 @@ class Footer extends Component<{}, {}> {
                     <div className={classes.Subscribe}>
                         <div className={classes.SubscribeText}>Подписывайся</div>
                         <Button className={classes.SubscribeBtn} btnType={ButtonType.TextWithArrow}/>
-                        <div  className={classes.SubscribeDescription}>
+                        <div className={classes.SubscribeDescription}>
                             <div className={classes.SubscribeDescriptionItem}>Читайте, думайте и еще раз.</div>
                             <div className={classes.SubscribeDescriptionItem}>Посмотреть, почитать, повторить.</div>
                         </div>
@@ -37,10 +42,22 @@ class Footer extends Component<{}, {}> {
                 </div>
                 <div className={classes.ConfidentAndSocial}>
                     <div className={classes.Confident}>
-
+                        <div className={classes.ConfidentPolitics}>
+                            Политика конфиденциальности
+                        </div>
+                        <div className={classes.ConfidentUnderText}>
+                            ЗАО "Корпорайшн Интертейменд" 2008 - {new Date().getFullYear()}.
+                        </div>
+                        <div className={classes.ConfidentUnderText}>
+                            Все права защищены.
+                        </div>
                     </div>
-                    <div className={classes.Social}> </div>
-
+                    <div className={classes.Social}>
+                        <div className={[classes.SocialIcon, classes.ContactIcon].join(' ')}><ContactIcon/></div>
+                        <div className={[classes.SocialIcon, classes.FacebookIcon].join(' ')}><FacebookIcon/></div>
+                        <div className={classes.SocialIcon}><TwitterIcon/></div>
+                        <div className={[classes.SocialIcon, classes.InstagramIcon].join(' ')}><InstagramIcon/></div>
+                    </div>
                 </div>
             </div>
         );
