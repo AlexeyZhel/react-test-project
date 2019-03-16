@@ -6,6 +6,18 @@
   display: flex;
   justify-content: flex-start;
 
+  .LastConcertImage {
+    position: relative;
+    box-shadow: 0 2px 40px rgba(0, 0, 0, 0.47);
+    cursor: pointer;
+
+    .LastConcertSocialNetworkButtons {
+      position: absolute;
+      right: -33px;
+      top: 20%;
+    }
+  }
+
   .LastConcertDescription {
     margin: 68px 0 0 52px;
 

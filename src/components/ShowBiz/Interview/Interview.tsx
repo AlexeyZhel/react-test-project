@@ -40,9 +40,12 @@ class Interview extends Component<{}, IInterviewState> {
 
         return (
             <div className={classes.Interview} style={componentTransformStyles}>
-                <div className={classes.InterviewImage}>
-                    <img src={dornImage} width={388} height={258}/>
+                <div className={classes.InterviewImageContainer}>
+                    <div className={classes.InterviewImage}>
+                        <img src={dornImage} width={388} height={258}/>
+                    </div>
                 </div>
+
                 <div className={classes.InterviewTitle}>
                     <div>Интервью:</div>
                     <div>Дорн</div>

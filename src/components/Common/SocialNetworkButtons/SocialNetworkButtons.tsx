@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, CSSProperties} from 'react';
 import classes from './SocialNetworkButtons.module.scss'
 import {ISocialNetworkButtonsProps} from "./SocialNetworkButtons.interface";
 import TwitterIcon from '-!svg-react-loader?name=TwitterIcon!../../../assets/icons/twitter-logo.svg';
@@ -11,9 +11,7 @@ class SocialNetworkButtons extends Component<ISocialNetworkButtonsProps, {}> {
     }
 
     render() {
-        const buttonStyles = !this.props.visible ?{
-            display: 'none'
-        } : {};
+        const buttonStyles: CSSProperties = !this.props.visible ? {opacity: 0} : {opacity: 1};
 
         return (
             <div className={[

@@ -25,6 +25,11 @@
       fill: $natera-blue;
     }
   }
+
+  &:focus {
+    outline: none;
+  }
+
 }
 
 .Arrow {

@@ -8,11 +8,15 @@
   z-index: 1;
   @include standardTransition(1s);
 
-  .InterviewImage {
+  .InterviewImageContainer {
+    width: 100%;
     height: 258px;
 
-    img {
+    .InterviewImage {
+      height: 258px;
+      width: 388px;
       float: right;
+      box-shadow: 0 2px 40px rgba(0, 0, 0, 0.47);
     }
   }
 

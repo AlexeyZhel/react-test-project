@@ -62,6 +62,7 @@
   .SingerImageContainer {
     z-index: 1;
     position: relative;
+    height: 0;
 
     .SingerImage {
       margin-top: -50px;
@@ -69,8 +70,8 @@
 
     .ShowBizSocialNetworkButtons {
       position: absolute;
-      right: -27px;
-      top: 28%;
+      right: -33px;
+      top: 170px;
     }
   }
 
