@@ -43,7 +43,7 @@
     }
 
     .EditorialChoiceMainTextFirst {
-      margin-top: 75px;
+      margin-top: 90px;
     }
 
     .EditorialChoiceName {
@@ -59,9 +59,19 @@
     }
   }
 
-  .SingerImage {
-    margin-top: -50px;
+  .SingerImageContainer {
     z-index: 1;
+    position: relative;
+
+    .SingerImage {
+      margin-top: -50px;
+    }
+
+    .ShowBizSocialNetworkButtons {
+      position: absolute;
+      right: -27px;
+      top: 28%;
+    }
   }
 
   .ShowBizText {

@@ -67,6 +67,7 @@
         font-weight: 700;
         line-height: 24px;
         text-transform: uppercase;
+        margin: 0 10px;
         @include standardTransition;
 
         @media (hover) {

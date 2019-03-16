@@ -1,3 +1,73 @@
+@import '../../fonts';
+@import '../../brand-styles';
+
 .Footer {
-  color: red
+  height: 494px;
+  background-color: $natera-line-color;
+  padding: 50px 100px;
+
+  .Separator {
+    height: 1px;
+    width: 100%;
+    background-color: $natera-separator;
+    min-width: 790px;
+  }
+
+  .LinksAndSubscribe {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+
+    .LinkGroup {
+      margin: 0 10px;
+
+      .LinkTitle {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      .LinkItem {
+        color: $natera-white;
+        font-size: 16px;
+        font-family: $gotham-cyrillic-regular;
+        line-height: 24px;
+        @include standardTransition;
+
+        @media (hover) {
+          &:hover {
+            color: $natera-blue;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .Subscribe {
+      .SubscribeText {
+        color: $natera-white;
+        font-size: 14px;
+        font-family: $gotham-cyrillic-regular;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+      }
+
+      .SubscribeBtn {
+        width: 235px;
+        height: 41px;
+        margin-top: 20px;
+        background-color: $natera-white;
+      }
+
+      .SubscribeDescription {
+        color: $natera-white;
+        font-size: 14px;
+        font-family: $gotham-cyrillic-regular;
+        font-weight: 400;
+        line-height: 20px;
+        margin-top: 20px;
+      }
+    }
+  }
 }

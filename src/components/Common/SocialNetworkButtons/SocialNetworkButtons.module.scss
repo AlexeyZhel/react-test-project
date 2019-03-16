@@ -1,0 +1,33 @@
+@import '../../../brand-styles';
+
+.SocialNetworkButtons {
+  .SocialNetworkButton {
+    border: 2px solid $natera-line-color;
+    max-width: 54px;
+    max-height: 54px;
+    border-radius: 27px;
+    margin: 5px 0;
+    @include standardTransition;
+
+    @media (hover) {
+      &:hover {
+        color: $natera-blue;
+        border: 2px solid $natera-hover-border-color;
+        fill: $natera-blue;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .TwitterIcon {
+    padding: 8px 10px 5px 10px;
+  }
+
+  .FacebookIcon {
+    padding: 10px 11px 6px 9px;
+  }
+
+  .ContactIcon {
+    padding: 11px 7px 9px 13px;
+  }
+}

@@ -3,10 +3,12 @@ import classes from './ShowBiz.module.scss'
 import {Button, ButtonType} from "../Common/Button";
 import singer from '../../assets/images/singer.png'
 import FloatingImage from "../Common/FloatingImage/FloatingImage";
+import SocialNetworkButtons from "../Common/SocialNetworkButtons/SocialNetworkButtons";
 
 export interface IShowBizState {
     backgroundFloatY: number;
     buttonFloatY: number;
+    isSocialVisible: boolean;
 }
 
 
@@ -15,7 +17,8 @@ class ShowBiz extends Component<{}, IShowBizState> {
         super(props);
         this.state = {
             backgroundFloatY: 0,
-            buttonFloatY: 0
+            buttonFloatY: 0,
+            isSocialVisible: false
         }
     }
 
@@ -31,7 +34,7 @@ class ShowBiz extends Component<{}, IShowBizState> {
         let backgroundFloatY, buttonFloatY;
         const backgroundOffset = 230;
         const backgroundYTrigger = 50;
-        const buttonOffset = 50;
+        const buttonOffset = 40;
         const buttonYTrigger = 150;
         const yPosition = window.scrollY;
 
@@ -39,6 +42,23 @@ class ShowBiz extends Component<{}, IShowBizState> {
         buttonFloatY = (yPosition > buttonYTrigger) ? -buttonOffset : 0;
         this.setState({backgroundFloatY: backgroundFloatY, buttonFloatY: buttonFloatY});
     };
+
+    onMouseMove = () => {
+        if (!this.state.isSocialVisible) {
+            this.setState({
+                isSocialVisible: true
+            });
+        }
+    };
+
+    onMouseOut = () => {
+        if (this.state.isSocialVisible) {
+            this.setState({
+                isSocialVisible: false
+            });
+        }
+    };
+
 
     render() {
         const backgroundTransformStyles = {
@@ -50,7 +70,7 @@ class ShowBiz extends Component<{}, IShowBizState> {
         };
 
         return (
-            <div className={classes.ShowBiz}>
+            <div className={classes.ShowBiz} onMouseMove={this.onMouseMove} onMouseOut={this.onMouseOut}>
                 <div className={classes.ShowBizBackground} style={backgroundTransformStyles}></div>
                 <div className={classes.EditorialChoice}>
                     <div className={classes.EditorialChoiceText}>
@@ -72,7 +92,10 @@ class ShowBiz extends Component<{}, IShowBizState> {
                         <Button btnType={ButtonType.Text} text={'Заглянуть'}/>
                     </div>
                 </div>
-                <FloatingImage className={classes.SingerImage} src={singer} width={696} height={653}/>
+                <div className={classes.SingerImageContainer}>
+                    <FloatingImage className={classes.SingerImage} src={singer} width={696} height={653}/>
+                    <SocialNetworkButtons className={classes.ShowBizSocialNetworkButtons} visible={this.state.isSocialVisible}/>
+                </div>
                 <div className={classes.ShowBizText}>
                     <div className={classes.ShowBizLineContainer}>
                         <div className={classes.ShowBizLine}></div>
@@ -85,7 +108,6 @@ class ShowBiz extends Component<{}, IShowBizState> {
                 </div>
                 <div className={classes.PlaceHolder}></div>
 
-                {/*<EditorialChoice/>*/}
                 {/*<LastConcert/>*/}
                 {/*<Interview/>*/}
             </div>
