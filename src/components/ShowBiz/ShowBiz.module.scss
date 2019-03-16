@@ -4,9 +4,16 @@
 .ShowBiz {
   margin: 60px 20px 0 20px;
   height: 621px;
-  background-color: $natera-background-color;
   display: flex;
   justify-content: space-between;
+
+  .ShowBizBackground {
+    position: absolute;
+    height: 621px;
+    width: 1426px;
+    background-color: $natera-background-color;
+    @include standardTransition;
+  }
 
   .EditorialChoice {
     width: 500px;
@@ -16,10 +23,19 @@
     color: $natera-black;
     font-weight: 700;
     font-size: 16px;
+    z-index: 1;
 
     .EditorialChoiceText {
       margin-top: 70px;
       line-height: 24px;
+      @include standardTransition;
+
+      @media (hover) {
+        &:hover {
+          color: $natera-blue;
+          cursor: pointer;
+        }
+      }
     }
 
     .EditorialChoiceMainText {
@@ -39,11 +55,13 @@
 
     .EditorialChoiceButton {
       margin-top: 50px;
+      @include standardTransition;
     }
   }
 
   .SingerImage {
-    margin-top: -50px
+    margin-top: -50px;
+    z-index: 1;
   }
 
   .ShowBizText {
@@ -51,6 +69,7 @@
     flex-direction: column;
     justify-content: flex-end;
     max-width: 100px;
+    z-index: 1;
 
     .ShowBizLineContainer {
 

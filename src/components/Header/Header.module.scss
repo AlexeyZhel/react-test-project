@@ -2,71 +2,77 @@
 @import '../../brand-styles';
 
 .Header {
-  height: 60px;
   background-color: white;
   position: sticky;
-  display: flex;
-  justify-content: space-between;
-  padding: 42px 20px 10px 20px;
   top: 0;
   z-index: 999;
 
-  .LetItShow {
-    .LetItShowSlogan {
-      width: 295px;
-      height: 35px;
-      color: $natera-black;
-      font-family: $avenir-black;
-      font-size: 45px;
-      font-weight: bold;
-      line-height: 24px;
-      text-transform: uppercase;
-      letter-spacing: -0.9px;
+  .HeaderContent {
+    max-width: 1426px;
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 20px 10px 20px;
+    height: 60px;
+    margin: 0 auto;
 
-      .OLetter {
-        color: $natera-blue;
+    .LetItShow {
+      .LetItShowSlogan {
+        width: 295px;
+        height: 35px;
+        color: $natera-black;
+        font-family: $avenir-black;
+        font-size: 45px;
+        font-weight: bold;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: -0.9px;
+
+        .OLetter {
+          color: $natera-blue;
+        }
+      }
+
+      .Underline {
+        margin-top: 15px;
+        margin-left: 78px;
+        width: 148px;
+        height: 1px;
+        background-color: $natera-underline-color
+      }
+
+      .Production {
+        margin-top: 10px;
+        margin-left: 30px;
+        color: $natera-black;
+        font-family: $avenir-book;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 11.2px;
       }
     }
 
-    .Underline {
-      margin-top: 15px;
-      margin-left: 78px;
-      width: 148px;
-      height: 1px;
-      background-color: $natera-underline-color
-    }
+    .NavBar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 552px;
 
-    .Production {
-      margin-top: 10px;
-      margin-left: 30px;
-      color: $natera-black;
-      font-family: $avenir-book;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 24px;
-      text-transform: uppercase;
-      letter-spacing: 11.2px;
-    }
-  }
+      .NavItem {
+        color: $natera-black;
+        font-family: $gotham-cyrillic-regular;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+        @include standardTransition;
 
-  .NavBar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 552px;
-
-    .NavItem {
-      color: $natera-black;
-      font-family: $gotham-cyrillic-regular;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 24px;
-      text-transform: uppercase;
-
-      @media (hover) {
-        &:hover {
-          color: $natera-blue;
+        @media (hover) {
+          &:hover {
+            color: $natera-blue;
+          }
         }
       }
     }

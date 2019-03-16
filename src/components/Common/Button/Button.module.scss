@@ -13,12 +13,10 @@
   font-weight: 700;
   line-height: 24px;
   box-sizing: border-box;
-  transition-property: background-color, color, fill, border-color;
-  transition-duration: .25s;
-  transition-timing-function: linear;
   cursor: pointer;
   user-select: none;
   fill: $natera-grey;
+  @include standardTransition;
 
   @media (hover) {
     &:hover {
