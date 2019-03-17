@@ -1,4 +1,31 @@
+@import '../../../fonts';
+@import '../../../brand-styles';
+
 .MainNews {
-  background-color: chartreuse;
-  height: 200px;
+  z-index: 1;
+
+  .NewsImageContainer {
+    position: relative;
+
+    .MainNewsSocialNetworkButtons {
+      position: absolute;
+      right: -33px;
+      top: 30%;
+    }
+  }
+
+  .NewsTitle {
+    width: 303px;
+    font-family: $gotham-cyrillic-regular;
+    color: $natera-black;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 29px 0 25px 0;
+  }
+
+  .NewsButton {
+    width: 249px;
+  }
 }

@@ -1,5 +1,8 @@
 import React, {Component} from "react";
 import classes from './Society.module.scss'
+import MainNews from "./MainNews/MainNews";
+import NewsGrid from "./NewsGrid/NewsGrid";
+import {SideTitle} from "../Common/SideTitle";
 
 export interface ISocietyState {
     backgroundFloatY: number;
@@ -49,7 +52,10 @@ class Society extends Component<{}, {}> {
 
         return (
             <div className={classes.Society} id='society'>
-
+                <div className={classes.SocietyBackground}></div>
+                <SideTitle className={classes.SocietySideTitle} lineWidth={90} title='Общество'/>
+                <MainNews/>
+                <NewsGrid/>
             </div>
         );
     }
