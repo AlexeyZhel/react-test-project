@@ -2,12 +2,14 @@
 @import '../../../brand-styles';
 
 .ImageGrid {
-  margin: 200px 10px 0 120px;
+  margin: 300px 10px 0 120px;
   z-index: 1;
 
   .ImageGridLine {
     display: flex;
     justify-content: flex-start;
+    @include standardTransition(1s);
+    margin-bottom: 24px;
 
     .ImageContainer {
       margin: 4px;
