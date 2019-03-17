@@ -4,6 +4,8 @@ import Footer from "./components/Footer/Footer";
 import ShowBiz from "./components/ShowBiz/ShowBiz";
 import classes from './App.module.scss'
 import Art from "./components/Art/Art";
+import Fashion from "./components/Fashion/Fashion";
+import Society from "./components/Society/Society";
 
 class App extends Component {
     render() {
@@ -13,8 +15,9 @@ class App extends Component {
                 <div className={classes.Content}>
                     <ShowBiz/>
                     <Art/>
+                    <Fashion/>
+                    <Society/>
                 </div>
-
                 <Footer/>
             </div>
         );
