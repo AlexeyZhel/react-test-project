@@ -6,10 +6,10 @@
   justify-content: flex-start;
   margin-left: 94px;
   margin-top: 176px;
-  z-index: 1;
 
   .NewsContainer {
     margin: 0 5px;
+    @include standardTransition(.2s);
 
     .ImageText {
       max-width: 180px;
@@ -21,5 +21,25 @@
       text-transform: uppercase;
       margin-top: 34px;
     }
+  }
+
+  .FloatItem {
+    margin-left: -200px;
+  }
+
+  .FirstItem {
+    z-index: 4;
+  }
+
+  .SecondItem {
+    z-index: 3;
+  }
+
+  .ThirdItem {
+    z-index: 2;
+  }
+
+  .FourthItem {
+    z-index: 1;
   }
 }

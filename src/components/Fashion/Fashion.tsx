@@ -30,8 +30,6 @@ class Fashion extends Component<{}, IFashionState> {
         const backgroundYTrigger = 2100;
         const yPosition = window.scrollY;
 
-        console.log(yPosition);
-
         backgroundFloatY = (yPosition > backgroundYTrigger) ? -backgroundOffset : 0;
         if (backgroundFloatY !== this.state.backgroundFloatY) {
             this.setState({backgroundFloatY: backgroundFloatY});

@@ -13,6 +13,7 @@
     position: relative;
 
     .SocietyBackground {
+      z-index: 5;
       top: 109px;
       left: -40px;
       position: absolute;
@@ -23,6 +24,7 @@
     }
 
     .SocietySideTitle {
+      z-index: 6;
       position: absolute;
       top: 30%;
       right: -520px;

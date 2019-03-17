@@ -12,7 +12,7 @@ class FloatingImage extends Component<IFloatingImageProps, IFloatingImageState> 
         }
     }
 
-    onMouseMove = (e: any) => {
+    onMouseMove = (e: React.MouseEvent<HTMLElement>) => {
         if (this.props.float) {
             const x = Math.floor((this.props.width / 2 - e.nativeEvent.offsetX) * 0.02);
             const y = Math.floor((this.props.height / 2 - e.nativeEvent.offsetY) * 0.02);
