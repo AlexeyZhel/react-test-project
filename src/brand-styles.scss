@@ -12,7 +12,7 @@ $natera-confidential-color: #757575;
 $natera-image-background-color: #1e2d05;
 
 @mixin standardTransition($duration: .3s) {
-  transition-property: transform, opacity, background-color, color, fill, border-color;
+  transition-property: transform, opacity, background-color, color, fill, border-color, border, box-shadow;
   transition-duration: $duration;
   transition-timing-function: ease;
 }

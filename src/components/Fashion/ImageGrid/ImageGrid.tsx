@@ -17,21 +17,26 @@ class ImageGrid extends Component<{}, {}> {
             <div className={classes.ImageGrid}>
                 <div className={classes.ImageGridLine}>
                     <div className={classes.ImageContainer}>
+                        <div className={classes.ImageText}>Yanina</div>
                         <FloatingImage src={image1} width={190} height={190}/>
                     </div>
                     <div className={classes.ImageContainer}>
+                        <div className={classes.ImageText}>Индиго мир</div>
                         <FloatingImage src={image2} width={190} height={190}/>
                     </div>
                 </div>
                 <div className={classes.ImageGridLine}>
                     <div className={classes.ImageContainer}>
                         <FloatingImage src={image3} width={190} height={190}/>
+                        <div className={classes.ImageText}>Слишком по делу</div>
                     </div>
                     <div className={classes.ImageContainer}>
                         <FloatingImage src={image4} width={190} height={190}/>
+                        <div className={classes.ImageText}>Фиалковый</div>
                     </div>
                     <div className={classes.ImageContainer}>
                         <FloatingImage src={image5} width={190} height={190}/>
+                        <div className={classes.ImageText}>Форс-мажор</div>
                     </div>
                 </div>
             </div>

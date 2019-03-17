@@ -52,8 +52,10 @@ class Fashion extends Component<{}, {}> {
 
         return (
             <div className={classes.Fashion} id='fashion'>
-                <div className={classes.FashionBackground}></div>
-                <SideTitle className={classes.FashionSideTitle} lineWidth={190} title='Мода'/>
+                <div className={classes.AbsoluteAnchor}>
+                    <div className={classes.FashionBackground}></div>
+                    <SideTitle className={classes.FashionSideTitle} lineWidth={190} title='Мода'/>
+                </div>
                 <ImageGrid/>
                 <SummerColor/>
             </div>

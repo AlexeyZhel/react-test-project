@@ -52,8 +52,10 @@ class Society extends Component<{}, {}> {
 
         return (
             <div className={classes.Society} id='society'>
-                <div className={classes.SocietyBackground}></div>
-                <SideTitle className={classes.SocietySideTitle} lineWidth={90} title='Общество'/>
+                <div className={classes.AbsoluteAnchor}>
+                    <div className={classes.SocietyBackground}></div>
+                    <SideTitle className={classes.SocietySideTitle} lineWidth={90} title='Общество'/>
+                </div>
                 <MainNews/>
                 <NewsGrid/>
             </div>

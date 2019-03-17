@@ -8,19 +8,24 @@
   margin-bottom: 107px;
   margin-left: 126px;
 
-  .SocietyBackground {
-    top: 109px;
-    left: -40px;
-    position: absolute;
-    height: 430px;
-    width: 431px;
-    background-color: $natera-background-color;
-    @include standardTransition(2s);
-  }
 
-  .SocietySideTitle {
-    position: absolute;
-    top: 30%;
-    left: 14%;
+  .AbsoluteAnchor {
+    position: relative;
+
+    .SocietyBackground {
+      top: 109px;
+      left: -40px;
+      position: absolute;
+      height: 430px;
+      width: 431px;
+      background-color: $natera-background-color;
+      @include standardTransition(2s);
+    }
+
+    .SocietySideTitle {
+      position: absolute;
+      top: 30%;
+      right: -520px;
+    }
   }
 }
