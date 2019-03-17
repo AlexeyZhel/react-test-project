@@ -30,7 +30,9 @@ class Interview extends Component<{}, IInterviewState> {
         const yPosition = window.scrollY;
 
         componentFloatY = (yPosition > componentYTrigger) ? -componentOffset : 0;
-        this.setState({componentFloatY: componentFloatY});
+        if (componentFloatY !== this.state.componentFloatY) {
+            this.setState({componentFloatY: componentFloatY});
+        }
     };
 
 

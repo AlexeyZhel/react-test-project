@@ -12,7 +12,7 @@
     height: 621px;
     width: 1326px;
     background-color: $natera-background-color;
-    @include standardTransition(1s);
+    @include standardTransition(2s);
   }
 
   .EditorialChoice {
@@ -55,7 +55,7 @@
 
     .EditorialChoiceButton {
       margin-top: 50px;
-      @include standardTransition(1s);
+      @include standardTransition(2s);
     }
   }
 

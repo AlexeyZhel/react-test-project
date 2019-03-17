@@ -32,7 +32,9 @@ class EditorChoice extends Component<{}, IEditorChoiceState> {
 
         backgroundFloatY = (yPosition > backgroundYTrigger) ? -backgroundOffset : 0;
         buttonFloatY = (yPosition > buttonYTrigger) ? -buttonOffset : 0;
-        this.setState({backgroundFloatY: backgroundFloatY, buttonFloatY: buttonFloatY});
+        if (backgroundFloatY !== this.state.backgroundFloatY || buttonFloatY !== this.state.buttonFloatY) {
+            this.setState({backgroundFloatY: backgroundFloatY, buttonFloatY: buttonFloatY});
+        }
     };
 
     onMouseMove = () => {
@@ -97,7 +99,7 @@ class EditorChoice extends Component<{}, IEditorChoiceState> {
                                           visible={this.state.isSocialVisible}/>
                 </div>
                 <div className={classes.SideTitlePlaceHolder}>
-                    <SideTitle className={classes.ShowBizSideTitle} lineWidth={265} title='Шоубиз' />
+                    <SideTitle className={classes.ShowBizSideTitle} lineWidth={265} title='Шоубиз'/>
                 </div>
             </div>
         );

@@ -4,6 +4,17 @@
 .MasterClass {
   z-index: 1;
 
+  .MasterClassImage {
+    position: relative;
+    z-index: 1;
+
+    .ArtSocialNetworkButtons {
+      position: absolute;
+      right: -33px;
+      top: 100px;
+    }
+  }
+
   .MasterClassNews {
     margin-top: 35px;
     margin-left: 94px;
@@ -28,12 +39,14 @@
       line-height: 24px;
     }
 
-    .MasterClassButton {
-      min-width: 249px;
-      margin-top: 21px;
-      margin-left: -20px
+    .MasterClassButtonContainer {
+      margin-top: 61px;
+      margin-left: -20px;
+      @include standardTransition(2s);
+
+      .MasterClassButton {
+        min-width: 249px;
+      }
     }
-
   }
-
 }

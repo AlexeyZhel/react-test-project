@@ -11,28 +11,35 @@
     margin-top: 248px;
     display: flex;
     justify-content: flex-start;
-  }
 
-  .ArtSideTitleContainer {
-    position: relative;
-    width: 100px;
-
-    .ArtSideTitle {
-      position: absolute;
-      top: 20%;
-      right: -140%;
+    .ArtMasterClassContainer {
+      z-index: 1;
+      @include standardTransition(2s);
     }
 
-    .ArtBackground {
-      top: -120px;
-      left: -100px;
-      position: absolute;
-      height: 544px;
-      width: 695px;
-      background-color: $natera-background-color;
-      @include standardTransition(1s);
+    .ArtSideTitleContainer {
+      position: relative;
+      width: 100px;
+
+      .ArtSideTitle {
+        position: absolute;
+        top: 20%;
+        right: -145%;
+      }
+
+      .ArtBackground {
+        top: -120px;
+        left: -100px;
+        position: absolute;
+        height: 544px;
+        width: 695px;
+        background-color: $natera-background-color;
+        @include standardTransition(2s);
+      }
     }
   }
+
+
 
   .PokrasExhibitionContainer {
     width: 100%;
