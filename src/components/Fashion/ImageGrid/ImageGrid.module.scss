@@ -1,4 +1,15 @@
 .ImageGrid {
-  background-color: darkgreen;
-  height: 200px;
+  margin: 200px 10px 0 120px;
+  z-index: 1;
+
+  .ImageGridLine {
+    display: flex;
+    justify-content: flex-start;
+
+    .ImageContainer {
+      margin: 4px;
+      width: 190px;
+      height: 190px;
+    }
+  }
 }

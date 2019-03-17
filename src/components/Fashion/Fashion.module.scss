@@ -1,3 +1,26 @@
+@import '../../fonts';
+@import '../../brand-styles';
+
 .Fashion {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -120px;
+  position: relative;
+
+  .FashionBackground {
+    top: 90px;
+    left: 84px;
+    position: absolute;
+    height: 586px;
+    width: 732px;
+    background-color: $natera-background-color;
+    @include standardTransition(2s);
+  }
+
+  .FashionSideTitle {
+    position: absolute;
+    top: 19%;
+    left: 31%;
+  }
 
 }

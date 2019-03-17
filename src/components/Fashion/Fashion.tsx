@@ -1,7 +1,10 @@
 import React, {Component} from "react";
 import classes from './Fashion.module.scss'
+import SummerColor from "./SummerColor/SummerColor";
+import ImageGrid from "./ImageGrid/ImageGrid";
+import {SideTitle} from "../Common/SideTitle";
 
-export interface IArtState {
+export interface IFashionState {
     backgroundFloatY: number;
     masterFloatY: number;
 }
@@ -49,7 +52,10 @@ class Fashion extends Component<{}, {}> {
 
         return (
             <div className={classes.Fashion} id='fashion'>
-
+                <div className={classes.FashionBackground}></div>
+                <SideTitle className={classes.FashionSideTitle} lineWidth={190} title='Мода'/>
+                <ImageGrid/>
+                <SummerColor/>
             </div>
         );
     }
