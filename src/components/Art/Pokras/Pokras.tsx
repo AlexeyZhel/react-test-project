@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import classes from './Pokras.module.scss'
+import FloatingImage from "../../Common/FloatingImage/FloatingImage";
+import pokrasImage from '../../../assets/images/pokras.png'
 
 class Pokras extends Component<{}, {}> {
   constructor(props: {}) {
@@ -9,7 +11,12 @@ class Pokras extends Component<{}, {}> {
   render() {
     return (
       <div className={classes.Pokras}>
-        Pokras
+        <div className={classes.PokrasImage}>
+          <FloatingImage src={pokrasImage} width={245} height={244}/>
+        </div>
+        <div className={classes.PokrasTitle}>
+          Pokras международный
+        </div>
       </div>
     );
   }

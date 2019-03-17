@@ -10,7 +10,7 @@
   .ShowBizBackground {
     position: absolute;
     height: 621px;
-    width: 1426px;
+    width: 1326px;
     background-color: $natera-background-color;
     @include standardTransition(1s);
   }
@@ -75,42 +75,14 @@
     }
   }
 
-  .ShowBizText {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    max-width: 100px;
-    z-index: 1;
-    margin-left: 20px;
+  .SideTitlePlaceHolder {
+    width: 160px;
+    position: relative;
 
-    .ShowBizLineContainer {
-
-      .ShowBizLine {
-        width: 2px;
-        height: 265px;
-        background-color: $natera-line-color;
-        opacity: 0.5;
-        margin-left: 50px;
-      }
+    .ShowBizSideTitle {
+      position: absolute;
+      left: -190px;
+      bottom: 40%;
     }
-
-    .RotatedTextContainer {
-      height: 100px;
-      padding-top: 130px;
-    }
-
-    .RotatedText {
-      transform: rotate(-90deg);
-      font-family: $gotham-cyrillic-regular;
-      color: $natera-black;
-      opacity: 0.5;
-      font-size: 48px;
-      font-weight: 300;
-      line-height: 24px;
-    }
-  }
-
-  .PlaceHolder {
-    width: 30px;
   }
 }

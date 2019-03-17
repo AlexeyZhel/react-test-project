@@ -3,15 +3,10 @@
 .FloatingImageContainer {
   overflow: hidden;
   box-shadow: 0 2px 40px rgba(0, 0, 0, 0.47);
+  background-color: $natera-image-background-color;
 }
 
 .FloatingImage {
   cursor: pointer;
   @include standardTransition;
-
-  @media (hover) {
-    &:hover {
-      transform: scale(1.02);
-    }
-  }
 }

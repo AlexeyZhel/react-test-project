@@ -4,6 +4,7 @@ import singer from '../../../assets/images/singer.png'
 import {Button, ButtonType} from "../../Common/Button";
 import FloatingImage from "../../Common/FloatingImage/FloatingImage";
 import SocialNetworkButtons from "../../Common/SocialNetworkButtons/SocialNetworkButtons";
+import {SideTitle} from "../../Common/SideTitle";
 
 export interface IEditorChoiceState {
     backgroundFloatY: number;
@@ -91,21 +92,13 @@ class EditorChoice extends Component<{}, IEditorChoiceState> {
                     </div>
                 </div>
                 <div className={classes.SingerImageContainer}>
-                    <FloatingImage className={classes.SingerImage} src={singer} width={696} height={653}/>
+                    <FloatingImage className={classes.SingerImage} float={true} src={singer} width={696} height={653}/>
                     <SocialNetworkButtons className={classes.ShowBizSocialNetworkButtons}
                                           visible={this.state.isSocialVisible}/>
                 </div>
-                <div className={classes.ShowBizText}>
-                    <div className={classes.ShowBizLineContainer}>
-                        <div className={classes.ShowBizLine}></div>
-                    </div>
-                    <div className={classes.RotatedTextContainer}>
-                        <div className={classes.RotatedText}>
-                            Шоубиз
-                        </div>
-                    </div>
+                <div className={classes.SideTitlePlaceHolder}>
+                    <SideTitle className={classes.ShowBizSideTitle} lineWidth={265} title='Шоубиз' />
                 </div>
-                <div className={classes.PlaceHolder}></div>
             </div>
         );
     }

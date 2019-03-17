@@ -1,5 +1,6 @@
 export interface  IFloatingImageProps {
   className?: string
+  float?: boolean
   src: any
   width: number
   height: number

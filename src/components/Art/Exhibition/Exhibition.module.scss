@@ -1,4 +1,20 @@
+@import '../../../fonts';
+@import '../../../brand-styles';
+
 .Exhibition {
-  background-color: black;
-  height: 200px;
+  margin: auto;
+  width: 77%;
+  z-index: 1;
+
+  .ExhibitionTitle {
+    font-family: $gotham-cyrillic-regular;
+    color: $natera-black;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-top: 39px;
+    width: 343px;
+  }
+
 }

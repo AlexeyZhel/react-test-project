@@ -1,4 +1,39 @@
+@import '../../../fonts';
+@import '../../../brand-styles';
+
 .MasterClass {
-  background-color: darkblue;
-  height: 200px;
+  z-index: 1;
+
+  .MasterClassNews {
+    margin-top: 35px;
+    margin-left: 94px;
+
+    .MasterClassTitle {
+      width: 556px;
+      text-transform: uppercase;
+      font-family: $gotham-cyrillic-regular;
+      color: $natera-black;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 44px;
+    }
+
+    .MasterClassDescription {
+      width: 356px;
+      font-family: $gotham-cyrillic-regular;
+      color: $natera-black;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .MasterClassButton {
+      min-width: 249px;
+      margin-top: 21px;
+      margin-left: -20px
+    }
+
+  }
+
 }

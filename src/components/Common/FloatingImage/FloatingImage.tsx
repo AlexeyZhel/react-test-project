@@ -13,19 +13,23 @@ class FloatingImage extends Component<IFloatingImageProps, IFloatingImageState> 
     }
 
     onMouseMove = (e: any) => {
-        const x = Math.floor((this.props.width / 2 - e.nativeEvent.offsetX) * 0.02);
-        const y = Math.floor((this.props.height / 2 - e.nativeEvent.offsetY) * 0.02);
-        this.setState({
-            offsetX: x,
-            offsetY: y,
-            isHovered: true
-        });
+        if (this.props.float) {
+            const x = Math.floor((this.props.width / 2 - e.nativeEvent.offsetX) * 0.02);
+            const y = Math.floor((this.props.height / 2 - e.nativeEvent.offsetY) * 0.02);
+            this.setState({
+                offsetX: x,
+                offsetY: y,
+                isHovered: true
+            });
+        }
     };
 
     onMouseOut = () => {
-        this.setState({
-            isHovered: false
-        });
+        if (this.props.float) {
+            this.setState({
+                isHovered: false
+            });
+        }
     };
 
     render() {
@@ -41,7 +45,12 @@ class FloatingImage extends Component<IFloatingImageProps, IFloatingImageState> 
                 classes.FloatingImageContainer,
                 this.props.className
             ].join(' ')}
-                 style={{maxWidth: this.props.width, maxHeight: this.props.height, minWidth: this.props.width, minHeight: this.props.height}}>
+                 style={{
+                     maxWidth: this.props.width,
+                     maxHeight: this.props.height,
+                     minWidth: this.props.width,
+                     minHeight: this.props.height
+                 }}>
                 <div className={classes.FloatingImage} onMouseMove={this.onMouseMove} onMouseOut={this.onMouseOut}
                      style={transformStyles}>
                     <img

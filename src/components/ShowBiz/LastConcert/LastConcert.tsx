@@ -3,6 +3,7 @@ import classes from './LastConcert.module.scss'
 import scorpionsImage from '../../../assets/images/scorpions.png'
 import {Button, ButtonType} from "../../Common/Button";
 import SocialNetworkButtons from "../../Common/SocialNetworkButtons/SocialNetworkButtons";
+import FloatingImage from "../../Common/FloatingImage/FloatingImage";
 
 export interface ILastConcertState {
     isSocialVisible: boolean;
@@ -36,7 +37,7 @@ class LastConcert extends Component<{}, ILastConcertState> {
         return (
             <div className={classes.LastConcert} onMouseMove={this.onMouseMove} onMouseOut={this.onMouseOut}>
                 <div className={classes.LastConcertImage}>
-                    <img src={scorpionsImage} width={283} height={370}/>
+                    <FloatingImage src={scorpionsImage} width={283} height={370}/>
                     <SocialNetworkButtons className={classes.LastConcertSocialNetworkButtons}
                                           visible={this.state.isSocialVisible}/>
                 </div>

@@ -9,6 +9,7 @@ $natera-line-color: #131313;
 $natera-separator: #ababab;
 $natera-white: #ffffff;
 $natera-confidential-color: #757575;
+$natera-image-background-color: #1e2d05;
 
 @mixin standardTransition($duration: .3s) {
   transition-property: transform, opacity, background-color, color, fill, border-color;

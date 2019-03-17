@@ -1,0 +1,41 @@
+@import '../../fonts';
+@import '../../brand-styles';
+
+.Art {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+
+  .ArtMasterClass {
+    margin-left: 124px;
+    margin-top: 248px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .ArtSideTitleContainer {
+    position: relative;
+    width: 100px;
+
+    .ArtSideTitle {
+      position: absolute;
+      top: 20%;
+      right: -140%;
+    }
+
+    .ArtBackground {
+      top: -120px;
+      left: -100px;
+      position: absolute;
+      height: 544px;
+      width: 695px;
+      background-color: $natera-background-color;
+      @include standardTransition(1s);
+    }
+  }
+
+  .PokrasExhibitionContainer {
+    width: 100%;
+    z-index: 1;
+  }
+}

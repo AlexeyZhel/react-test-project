@@ -1,0 +1,32 @@
+@import '../../../brand-styles';
+@import '../../../fonts';
+
+.SideTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  z-index: 1;
+  transform: rotate(-90deg);
+
+  .LineContainer {
+
+    .Line {
+      height: 2px;
+      background-color: $natera-line-color;
+      opacity: 0.5;
+      margin-left: 32px;
+      margin-top: 19px;
+    }
+  }
+
+  .RotatedTextContainer {
+    .RotatedText {
+      font-family: $gotham-cyrillic-regular;
+      color: $natera-black;
+      opacity: 0.5;
+      font-size: 48px;
+      font-weight: 300;
+      line-height: 24px;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import classes from './Interview.module.scss'
 import dornImage from '../../../assets/images/dorn.png'
+import FloatingImage from "../../Common/FloatingImage/FloatingImage";
 
 export interface IInterviewState {
     componentFloatY: number;
@@ -41,9 +42,7 @@ class Interview extends Component<{}, IInterviewState> {
         return (
             <div className={classes.Interview} style={componentTransformStyles}>
                 <div className={classes.InterviewImageContainer}>
-                    <div className={classes.InterviewImage}>
-                        <img src={dornImage} width={388} height={258}/>
-                    </div>
+                    <FloatingImage className={classes.InterviewImage} src={dornImage} width={388} height={258}/>
                 </div>
 
                 <div className={classes.InterviewTitle}>
