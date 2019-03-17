@@ -11,7 +11,7 @@ class ShowBiz extends Component<{}, {}> {
 
     render() {
         return (
-            <div>
+            <div id='showbiz'>
                 <EditorChoice/>
                 <div className={classes.ConcertAndInterview}>
                     <Interview/>

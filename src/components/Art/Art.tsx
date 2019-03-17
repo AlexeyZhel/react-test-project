@@ -52,7 +52,7 @@ class Art extends Component<{}, IArtState> {
         };
 
         return (
-            <div className={classes.Art}>
+            <div className={classes.Art} id='art'>
                 <div className={classes.ArtMasterClass}>
                     <div className={classes.ArtMasterClassContainer} style={masterTransformStyles}>
                         <MasterClass/>

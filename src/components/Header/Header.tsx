@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import classes from './Header.module.scss'
 import {Button, ButtonType} from "../Common/Button";
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 interface IHeaderState {
     isTop: boolean
@@ -44,10 +45,10 @@ class Header extends Component<{}, IHeaderState> {
                         {production}
                     </div>
                     <nav className={classes.NavBar}>
-                        <a className={classes.NavItem} href="#showbiz">Шоубиз</a>
-                        <a className={classes.NavItem} href="#art">Искусство</a>
-                        <a className={classes.NavItem} href="#fashion">Красота</a>
-                        <a className={classes.NavItem} href="#society">Общество</a>
+                        <Link className={classes.NavItem} to="showbiz" smooth={true} duration={1000} delay={50}>Шоубиз</Link>
+                        <Link className={classes.NavItem} to="art" smooth={true} duration={1000} delay={50}>Искусство</Link>
+                        <Link className={classes.NavItem} to="fashion" smooth={true} duration={1000} delay={50}>Красота</Link>
+                        <Link className={classes.NavItem} to="society" smooth={true} duration={1000} delay={50}>Общество</Link>
                     </nav>
                     <Button btnType={ButtonType.Arrow}/>
                 </div>
