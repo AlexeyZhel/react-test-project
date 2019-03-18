@@ -5,7 +5,15 @@
   margin-bottom: 45px;
 
   .ConcertAndInterview {
-    display: flex;
-    justify-content: flex-start;
+    @media (min-width: 1200px) {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row-reverse;
+      margin-left: 0;
+    }
+
+    display: block;
+    margin-left: 50px;
+
   }
 }
