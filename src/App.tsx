@@ -8,20 +8,24 @@ import Fashion from "./components/Fashion/Fashion";
 import Society from "./components/Society/Society";
 
 class App extends Component {
-    render() {
-        return (
-            <div className={classes.App}>
-                <Header/>
-                <div className={classes.Content}>
-                    <ShowBiz/>
-                    <Art/>
-                    <Fashion/>
-                    <Society/>
-                </div>
-                <Footer/>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div className={classes.App}>
+        <Header/>
+        <div className={classes.Content}>
+          <ShowBiz/>
+          <Art/>
+          <Fashion/>
+          <div className={classes.Society}>
+            <Society/>
+          </div>
+        </div>
+        <div className={classes.Footer}>
+          <Footer/>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -2,5 +2,21 @@
   .Content {
     max-width: 1426px;
     margin: 0 auto;
+
+    .Society {
+      display: none;
+
+      @media (min-width: 1200px) {
+        display: block;
+      }
+    }
+  }
+
+  .Footer {
+    display: none;
+
+    @media (min-width: 1200px) {
+      display: block;
+    }
   }
 }

@@ -3,6 +3,11 @@
 
 .MasterClass {
   z-index: 1;
+  margin-top: -50px;
+
+  @media (min-width: 1200px) {
+    margin-top: 0;
+  }
 
   .MasterClassImage {
     position: relative;
@@ -22,18 +27,27 @@
     .MasterClassTitle {
       width: 556px;
       @include title;
-      margin-bottom: 44px;
+
+      @media (min-width: 1200px) {
+        margin-bottom: 44px;
+      }
     }
 
     .MasterClassDescription {
       width: 356px;
+      display: none;
       @include text(700);
+
+      @media (min-width: 1200px) {
+        display: block;
+      }
     }
 
     .MasterClassButtonContainer {
       margin-top: 61px;
       margin-left: -20px;
       @include standardTransition(2s);
+
 
       .MasterClassButton {
         min-width: 249px;

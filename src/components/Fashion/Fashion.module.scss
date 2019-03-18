@@ -4,24 +4,69 @@
 .Fashion {
   display: flex;
   justify-content: flex-start;
+  margin-top: 400px;
+  margin-left: 100px;
+
+  @media (min-width: 1200px) {
+    margin: 0;
+  }
+
+  .ImageGrid {
+    display: none;
+
+    @media (min-width: 1200px) {
+      display: block;
+    }
+  }
 
   .AbsoluteAnchor {
     position: relative;
 
     .FashionBackground {
-      top: 90px;
-      left: 84px;
+      top: 200px;
+      left: -50px;
       position: absolute;
-      height: 586px;
-      width: 732px;
+      height: 400px;
+      width: 1000px;
       background-color: $natera-background-color;
       @include standardTransition(2s);
+
+      @media (min-width: 1200px) {
+        top: 90px;
+        left: 84px;
+        height: 586px;
+        width: 732px;
+      }
     }
 
     .FashionSideTitle {
       position: absolute;
-      top: 20%;
-      right: -780px;
+      top: -50px;
+      right: -1050px;
+
+      @media (min-width: 1200px) {
+        top: 20%;
+        right: -780px;
+      }
+    }
+
+    .Dots {
+      position: absolute;
+      display: flex;
+      cursor: pointer;
+      bottom: 100px;
+      right: -530px;
+
+      @media (min-width: 1200px) {
+        display: none;
+      }
+
+      .Dot {
+        margin: 5px;
+        width: 5px;
+        height: 5px;
+        background-color: $natera-black
+      }
     }
   }
 }

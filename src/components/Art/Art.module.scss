@@ -2,9 +2,12 @@
 @import '../../brand-styles';
 
 .Art {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: -120px;
+
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 
   .ArtMasterClass {
     margin-left: 124px;
@@ -29,20 +32,35 @@
 
       .ArtBackground {
         top: -120px;
-        left: -100px;
+        left: -200px;
         position: absolute;
-        height: 544px;
-        width: 695px;
+        height: 800px;
+        width: 400px;
         background-color: $natera-background-color;
         @include standardTransition(2s);
+
+        @media (min-width: 1200px) {
+          top: -120px;
+          left: -100px;
+          position: absolute;
+          height: 544px;
+          width: 695px;
+        }
       }
     }
   }
 
 
-
   .PokrasExhibitionContainer {
-    width: 100%;
     z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    margin: -200px 0 0 100px;
+
+    @media (min-width: 1200px) {
+      margin: 0;
+      display: block;
+      width: 100%;
+    }
   }
 }

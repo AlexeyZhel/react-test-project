@@ -2,9 +2,12 @@
 @import '../../../brand-styles';
 
 .Pokras {
-  margin: 0 auto 47px auto;
-  width: 70%;
   z-index: 1;
+
+  @media (min-width: 1200px) {
+    margin: 0 auto 47px auto;
+    width: 70%;
+  }
 
   .PokrasTitle {
     @include subtitle;
