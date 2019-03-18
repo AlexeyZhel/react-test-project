@@ -22,21 +22,11 @@
     margin: 68px 0 0 52px;
 
     .LastConcertTitle {
-      text-transform: uppercase;
-      font-family: $gotham-cyrillic-regular;
-      color: $natera-black;
-      font-weight: 700;
-      font-size: 30px;
-      line-height: 36px;
+      @include title;
     }
 
     .LastConcertText {
-      font-family: $gotham-cyrillic-regular;
-      color: $natera-black;
-      max-width: 348px;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
+      @include text;
       margin: 43px 0 25px 0;
     }
 

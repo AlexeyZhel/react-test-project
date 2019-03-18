@@ -21,22 +21,13 @@
 
     .MasterClassTitle {
       width: 556px;
-      text-transform: uppercase;
-      font-family: $gotham-cyrillic-regular;
-      color: $natera-black;
-      font-weight: 700;
-      font-size: 30px;
-      line-height: 36px;
+      @include title;
       margin-bottom: 44px;
     }
 
     .MasterClassDescription {
       width: 356px;
-      font-family: $gotham-cyrillic-regular;
-      color: $natera-black;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 24px;
+      @include text(700);
     }
 
     .MasterClassButtonContainer {

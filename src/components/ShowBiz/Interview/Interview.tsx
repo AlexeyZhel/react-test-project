@@ -48,8 +48,9 @@ class Interview extends Component<{}, IInterviewState> {
                 </div>
 
                 <div className={classes.InterviewTitle}>
-                    <div>Интервью:</div>
-                    <div>Дорн</div>
+                    <div className={classes.TitleContent}>
+                        Интервью: Дорн
+                    </div>
                 </div>
                 <div className={classes.InterviewText}>
                     Иван Дорн рассказывает о любви принцессы и о том, как он встретил свое счастье. Счастье оказалось

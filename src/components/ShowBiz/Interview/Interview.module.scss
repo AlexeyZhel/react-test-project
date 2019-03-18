@@ -21,25 +21,22 @@
   }
 
   .InterviewTitle {
-    text-align: right;
-    text-transform: uppercase;
-    font-family: $gotham-cyrillic-regular;
-    color: $natera-black;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
     margin: 42px 30px 48px 0;
+    display: flex;
+    justify-content: flex-end;
+
+    .TitleContent {
+      width: 200px;
+      text-align: right;
+      @include title;
+    }
   }
 
   .InterviewText {
     max-width: 336px;
     text-align: right;
     float: right;
-    font-family: $gotham-cyrillic-regular;
-    color: $natera-black;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    @include text;
     margin-right: 30px;
   }
 }

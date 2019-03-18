@@ -16,12 +16,7 @@
 
   .NewsTitle {
     width: 303px;
-    font-family: $gotham-cyrillic-regular;
-    color: $natera-black;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    text-transform: uppercase;
+    @include subtitle;
     margin: 29px 0 25px 0;
   }
 

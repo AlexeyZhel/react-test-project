@@ -1,3 +1,5 @@
+@import './fonts';
+
 $natera-blue: #0182d4;
 $natera-grey: #7b7b7b;
 $natera-black: #020202;
@@ -15,4 +17,30 @@ $natera-image-background-color: #1e2d05;
   transition-property: transform, opacity, background-color, color, fill, border-color, border, box-shadow;
   transition-duration: $duration;
   transition-timing-function: ease;
+}
+
+@mixin title {
+  text-transform: uppercase;
+  font-family: $gotham-cyrillic-regular;
+  color: $natera-black;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+@mixin text($font-weight: 400) {
+  font-family: $gotham-cyrillic-regular;
+  color: $natera-black;
+  font-weight: $font-weight;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin subtitle {
+  text-transform: uppercase;
+  font-family: $gotham-cyrillic-regular;
+  color: $natera-black;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
 }

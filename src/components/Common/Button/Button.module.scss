@@ -6,17 +6,13 @@
   border: 2px solid $natera-grey;
   color: $natera-grey;
   background-color: transparent;
-  text-transform: uppercase;
-  font-family: $gotham-cyrillic-medium;
   letter-spacing: 1.2px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
   box-sizing: border-box;
   cursor: pointer;
   user-select: none;
   fill: $natera-grey;
   @include standardTransition;
+  @include subtitle;
 
   @media (hover) {
     &:hover {

@@ -40,9 +40,14 @@
 
     .EditorialChoiceMainText {
       font-size: 44px;
+      text-transform: uppercase;
+      font-family: $gotham-cyrillic-regular;
+      color: $natera-black;
+      font-weight: 700;
     }
 
     .EditorialChoiceMainTextFirst {
+      @include subtitle;
       margin-top: 90px;
     }
 
@@ -50,6 +55,9 @@
       margin-top: 20px;
       color: $natera-grey-author;
       font-weight: 400;
+      text-transform: uppercase;
+      font-family: $gotham-cyrillic-regular;
+      font-size: 16px;
       line-height: 24px;
     }
 

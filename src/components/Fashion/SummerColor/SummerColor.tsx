@@ -7,6 +7,7 @@ import SocialNetworkButtons from "../../Common/SocialNetworkButtons/SocialNetwor
 
 export interface ISummerClassState {
     buttonFloatY: number
+    contentFloatY: number
     isSocialVisible: boolean
 }
 
@@ -15,6 +16,7 @@ class SummerColor extends Component<{}, ISummerClassState> {
         super(props);
         this.state = {
             buttonFloatY: 0,
+            contentFloatY: 0,
             isSocialVisible: false
         }
     }
@@ -45,14 +47,20 @@ class SummerColor extends Component<{}, ISummerClassState> {
     };
 
     handleScroll = (): void => {
-        let buttonFloatY;
-        const backgroundOffset = 50;
-        const backgroundYTrigger = 1350;
+        let buttonFloatY, contentFloatY;
+        const buttonOffset = 200;
+        const buttonYTrigger = 2200;
+        const contentOffset = 200;
+        const contentYTrigger = 2200;
         const yPosition = window.scrollY;
 
-        buttonFloatY = (yPosition > backgroundYTrigger) ? -backgroundOffset : 0;
-        if (buttonFloatY !== this.state.buttonFloatY) {
-            this.setState({buttonFloatY: buttonFloatY});
+        buttonFloatY = (yPosition > buttonYTrigger) ? -buttonOffset : 0;
+        contentFloatY = (yPosition > contentYTrigger) ? -contentOffset : 0;
+        if (buttonFloatY !== this.state.buttonFloatY || contentFloatY !== this.state.contentFloatY) {
+            this.setState({
+                buttonFloatY: buttonFloatY,
+                contentFloatY: contentFloatY
+            });
         }
     };
 
@@ -60,15 +68,19 @@ class SummerColor extends Component<{}, ISummerClassState> {
         const buttonTransformStyles = {
             transform: `translate(0px, ${this.state.buttonFloatY}px)`
         };
+    
+        const contentTransformStyles = {
+            transform: `translate(0px, ${this.state.contentFloatY}px)`
+        };
 
         return (
             <div className={classes.SummerColor} onMouseOut={this.onMouseOut} onMouseMove={this.onMouseMove}>
-                <div className={classes.ImageContainer}>
+                <div className={classes.ImageContainer} style={contentTransformStyles}>
                     <FloatingImage src={summerImage} width={593} height={501} float={true}/>
                     <SocialNetworkButtons className={classes.SummerColorSocialNetworkButtons}
                                           visible={this.state.isSocialVisible}/>
                 </div>
-                <div className={classes.SummerColorInfo}>
+                <div className={classes.SummerColorInfo} style={contentTransformStyles}>
                     <div className={classes.SummerColorTitle}>
                         Какого цвета лето?
                     </div>
@@ -79,7 +91,9 @@ class SummerColor extends Component<{}, ISummerClassState> {
                         под знаком которых пройдет модный теплый сезон в этому году.
                     </div>
                 </div>
-                <Button btnType={ButtonType.TextWithArrow} className={classes.SummerColorButton} text='Полностью'/>
+                <div className={classes.SummerColorButtonContainer} style={buttonTransformStyles}>
+                    <Button btnType={ButtonType.TextWithArrow} className={classes.SummerColorButton} text='Полностью'/>
+                </div>
             </div>
         );
     }

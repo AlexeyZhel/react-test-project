@@ -6,14 +6,8 @@
   z-index: 1;
 
   .ExhibitionTitle {
-    font-family: $gotham-cyrillic-regular;
-    color: $natera-black;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    text-transform: uppercase;
+    @include subtitle;
     margin-top: 39px;
     width: 343px;
   }
-
 }

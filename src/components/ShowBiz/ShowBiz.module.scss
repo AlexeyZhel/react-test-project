@@ -1,8 +1,12 @@
 @import '../../fonts';
 @import '../../brand-styles';
 
-.ConcertAndInterview {
-  display: flex;
-  justify-content: flex-start;
-  float-wrap: wrap;
+.ShowBiz {
+  margin-bottom: 45px;
+
+  .ConcertAndInterview {
+    display: flex;
+    justify-content: flex-start;
+    float-wrap: wrap;
+  }
 }
