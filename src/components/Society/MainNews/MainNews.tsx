@@ -42,7 +42,7 @@ class MainNews extends Component<{}, IMainNewsState> {
                                           visible={this.state.isSocialVisible}/>
                 </div>
                 <div className={classes.NewsTitle}>
-                    Почему нельза перекрашивать фотографии?
+                    Почему нельзя перекрашивать фотографии?
                 </div>
                 <Button className={classes.NewsButton} btnType={ButtonType.TextWithArrow} text='Полностью'/>
             </div>
