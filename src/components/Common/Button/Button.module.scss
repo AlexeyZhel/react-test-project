@@ -14,12 +14,10 @@
   @include standardTransition;
   @include subtitle;
 
-  @media (hover) {
-    &:hover {
-      color: $natera-blue;
-      border: 2px solid $natera-hover-border-color;
-      fill: $natera-blue;
-    }
+  &:hover {
+    color: $natera-blue;
+    border: 2px solid $natera-hover-border-color;
+    fill: $natera-blue;
   }
 
   &:focus {

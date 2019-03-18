@@ -27,7 +27,7 @@
       left: -50px;
       position: absolute;
       height: 400px;
-      width: 1000px;
+      width: 950px;
       background-color: $natera-background-color;
       @include standardTransition(2s);
 
@@ -42,7 +42,7 @@
     .FashionSideTitle {
       position: absolute;
       top: -50px;
-      right: -1050px;
+      right: -1000px;
 
       @media (min-width: 1200px) {
         top: 20%;
@@ -55,7 +55,7 @@
       display: flex;
       cursor: pointer;
       bottom: 100px;
-      right: -530px;
+      right: -500px;
 
       @media (min-width: 1200px) {
         display: none;

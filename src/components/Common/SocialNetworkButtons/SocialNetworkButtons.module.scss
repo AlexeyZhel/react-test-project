@@ -12,13 +12,11 @@
     margin: 5px 0;
     @include standardTransition;
 
-    @media (hover) {
-      &:hover {
-        color: $natera-blue;
-        border: 2px solid $natera-hover-border-color;
-        fill: $natera-blue;
-        cursor: pointer;
-      }
+    &:hover {
+      color: $natera-blue;
+      border: 2px solid $natera-hover-border-color;
+      fill: $natera-blue;
+      cursor: pointer;
     }
   }
 

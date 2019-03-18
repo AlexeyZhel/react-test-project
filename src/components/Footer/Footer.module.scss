@@ -34,11 +34,9 @@
         line-height: 24px;
         @include standardTransition;
 
-        @media (hover) {
-          &:hover {
-            color: $natera-blue;
-            cursor: pointer;
-          }
+        &:hover {
+          color: $natera-blue;
+          cursor: pointer;
         }
       }
     }
@@ -85,6 +83,11 @@
         font-size: 12px;
         color: $natera-white;
         margin-bottom: 14px;
+
+        &:hover {
+          color: $natera-blue;
+          cursor: pointer;
+        }
       }
 
       .ConfidentUnderText {
@@ -104,11 +107,9 @@
         fill: $natera-white;
         opacity: 0.75;
 
-        @media (hover) {
-          &:hover {
-            fill: $natera-blue;
-            cursor: pointer;
-          }
+        &:hover {
+          fill: $natera-blue;
+          cursor: pointer;
         }
       }
 

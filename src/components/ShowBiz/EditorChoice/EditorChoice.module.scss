@@ -10,9 +10,13 @@
   .ShowBizBackground {
     position: absolute;
     height: 621px;
-    width: 1326px;
+    width: 1100px;
     background-color: $natera-background-color;
     @include standardTransition(2s);
+
+    @media (min-width: 1200px) {
+      width: 1326px;
+    }
   }
 
   .EditorialChoice {
@@ -30,11 +34,9 @@
       line-height: 24px;
       @include standardTransition;
 
-      @media (hover) {
-        &:hover {
-          color: $natera-blue;
-          cursor: pointer;
-        }
+      &:hover {
+        color: $natera-blue;
+        cursor: pointer;
       }
     }
 
