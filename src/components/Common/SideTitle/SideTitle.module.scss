@@ -1,5 +1,4 @@
 @import '../../../brand-styles';
-@import '../../../fonts';
 
 .SideTitle {
   display: flex;
@@ -21,7 +20,6 @@
 
   .RotatedTextContainer {
     .RotatedText {
-      font-family: $gotham-cyrillic-regular;
       color: $natera-black;
       opacity: 0.5;
       font-size: 48px;

@@ -1,4 +1,3 @@
-@import '../../../fonts';
 @import '../../../brand-styles';
 
 .NewsGrid {
@@ -13,7 +12,6 @@
 
     .ImageText {
       max-width: 180px;
-      font-family: $gotham-cyrillic-regular;
       color: $natera-black;
       font-weight: 400;
       font-size: 14px;

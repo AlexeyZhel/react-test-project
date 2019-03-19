@@ -1,5 +1,3 @@
-@import './fonts';
-
 $natera-blue: #0182d4;
 $natera-grey: #7b7b7b;
 $natera-black: #020202;
@@ -21,7 +19,6 @@ $natera-image-background-color: #1e2d05;
 
 @mixin title {
   text-transform: uppercase;
-  font-family: $gotham-cyrillic-regular;
   color: $natera-black;
   font-weight: 700;
   font-size: 30px;
@@ -29,7 +26,6 @@ $natera-image-background-color: #1e2d05;
 }
 
 @mixin text($font-weight: 400) {
-  font-family: $gotham-cyrillic-regular;
   color: $natera-black;
   font-weight: $font-weight;
   font-size: 16px;
@@ -38,7 +34,6 @@ $natera-image-background-color: #1e2d05;
 
 @mixin subtitle {
   text-transform: uppercase;
-  font-family: $gotham-cyrillic-regular;
   color: $natera-black;
   font-weight: 700;
   font-size: 16px;
